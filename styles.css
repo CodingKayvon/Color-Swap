@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(179, 179, 179);
+}
+
+header {
+  background-color: rgb(126, 125, 125);
+  height: 60px;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.page-title {
+  text-transform: capitalize;
+  color: rgb(33, 68, 97);
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: rgb(33, 68, 97);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.middle-section ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.middle-section a {
+  margin-right: 50px;
+}
+
+.middle-section a:hover {
+  text-decoration: underline;
+  color: rgb(15, 37, 56);
+}
+
+button {
+  background-color: rgb(33, 68, 97);
+  color: white;
+  text-transform: capitalize;
+  height: 30px;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(15, 37, 56);
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 75px;
+  text-transform: capitalize;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);;
+  background: url(imgs/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+.color-info {
+  margin-left: 20px;
+  margin-top: 70px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.color{
+  margin-left: 10px;
+}
+
+.btn {
+  margin-left: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@keyframes back {
+  100%{
+    background-position: 2000px 0;
+  }
+}
